@@ -1,3 +1,3 @@
-class Book < ActiveRecord::Migration[6.1]
+class Book < ActiveRecord::Base
     belongs_to :author
 end

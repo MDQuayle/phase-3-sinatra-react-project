@@ -11,11 +11,11 @@ class ApplicationController < Sinatra::Base
   end
   get '/authors/:id' do
     author = Author.find(params[:id])
-    author.to_json(include :author)
+    author.to_json
   end
   get '/books/:id' do
     book = Book.find(params[:id])
-    book.to_json(include: :books)
+    book.to_json
   end
   post '/authors' do
     new_author = Author.create(

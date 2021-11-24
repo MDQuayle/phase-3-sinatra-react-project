@@ -1,3 +1,3 @@
-class Author < ActiveRecord::Migration[6.1]
+class Author < ActiveRecord::Base
     has_many :books
 end
