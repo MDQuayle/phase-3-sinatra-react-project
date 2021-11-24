@@ -23,14 +23,6 @@ class ApplicationController < Sinatra::Base
     )
     new_author.to_json
   end
-  patch '/authors/:id' do
-    author = Author.find(params[:id])
-    author.update(
-    name: params[:name]
-    )
-    author.to_json
-  end
-  
   post '/books' do
     new_book = Book.create(
       name: params[:name],
@@ -39,6 +31,14 @@ class ApplicationController < Sinatra::Base
     )
     new_book.to_json
   end
+  patch '/authors/:id' do
+    author = Author.find(params[:id])
+    author.update(
+    name: params[:name]
+    )
+    author.to_json
+  end
+  
   patch '/books/:id' do
     book = Book.find(params[:id])
     book.update(
