@@ -1,8 +1,8 @@
 puts "🌱 Seeding spices..."
-Author.create(name: "Chuck Klosterman")
-Author.create(name: "Kurt Vonnegut Jr.")
-Author.create(name: "Will Wight")
-Author.create(name: "T.J. Klune")
+Author.create(author_name: "Chuck Klosterman")
+Author.create(author_name: "Kurt Vonnegut Jr.")
+Author.create(author_name: "Will Wight")
+Author.create(author_name: "T.J. Klune")
 Book.create(name: "Sex, Drugs, and Cocoa Puffs: A Low Culture Manifesto",author: Author.first, genre: "Essays", author_id: 1)
 Book.create(name: "Killing Yourself to Live: 85% of a True Story",author: Author.first, genre: "Essays", author_id: 1)
 Book.create(name: "Breakfast of Champions", author: Author.second, genre: "Science Fiction", author_id:2)
