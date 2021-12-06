@@ -1,3 +1,6 @@
+Author.destroy_all
+Book.destroy_all
+
 puts "🌱 Seeding spices..."
 Author.create(author_name: "Chuck Klosterman")
 Author.create(author_name: "Kurt Vonnegut Jr.")
